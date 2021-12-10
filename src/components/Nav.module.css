@@ -1,0 +1,170 @@
+:root {
+  --clr-background: linear-gradient(180deg, #023047 0%, #000000 100%);
+
+  --clr-text: #FFFFFF;
+
+  --ff-primary: "Open Sans";
+}
+
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: var(--clr-background);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--clr-text);
+  font-family: var(--ff-primary);
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 2rem 0 2rem 0;
+  align-items: center;
+  border: 2px solid palevioletred;
+}
+
+.logoContainerSearch {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0 5rem 0;
+  border: 2px solid palevioletred;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid aqua;
+  padding: 0 0 3rem 0;
+}
+
+.searchContainer > :first-child {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.lyricsCont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid aqua;
+  padding: 0 0 5rem 0;
+}
+
+.lyricsCont > p {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 90vw;
+}
+
+.songCont {
+  font-size: 1.2rem;
+  background-color: #219EBC;
+  border-radius: 4px;
+  min-width: 25%;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.songCont > p {
+  margin: 0;
+}
+
+.InputCont {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin: 1rem
+}
+
+.InputCont > :first-child {
+  font-weight: bold;
+  font-size: 1.4rem
+}
+
+.Input {
+  background: none;
+  border: 0; 
+  box-shadow: none;
+  outline: none;
+  color: var(--clr-text);
+  border-bottom: 1px solid #FFFFFF;
+  width: 100%
+}
+
+.SearchButtonStyle {
+  border: 1px solid #FFB703;
+  background: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 40%;
+  max-width: 13rem ;
+  color: #FFB703;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight:bold;
+}
+
+.linkStyle {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #FFB703;
+  text-decoration: none;
+}
+
+@media (min-width: 880px) {
+            
+  .logoContainer {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5rem 5rem 3rem 5rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .lyricsCont > p {
+    max-width: 65vw;
+  }
+}
+
+@media (min-width: 640px) {
+  .lyricsCont > p {
+    max-width: 45vw;
+  }
+
+  .InputCont {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 850px) {
+  .lyricsCont > p {
+    max-width: 30vw;
+  }
+
+  .InputCont {
+    width: 50vw;
+  }
+}
+
+.MusicPage {
+  background: #FFFFFF;
+}
